@@ -11133,33 +11133,24 @@ div.col-lg-6 {
 }
 
 .image-wrapper {
-    position: relative;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
+    text-align: center;
+    padding: 20px;
     box-sizing: border-box;
 }
-image-wrapper img {
-    width: 100%;
+.menu-card-img {
+    max-width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
-    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }    
 
-@media (max-width: 600px) {
-    .image-wrapper {
-        padding: 10px;
+@media (max-width: 767px) {
+    .menu-card-img {
+        padding: 0 10px;
  } 
 
-    .image-wrapper img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
- }
-}    
-    
 
         </style>
         <!-- Favicon-->
@@ -11220,7 +11211,7 @@ image-wrapper img {
                         <p class="text-black-75 mb-4" style="position: relative; bottom: 5%;">Delivery and pickup available. Contact us for more information.</p>
                         <a class="btn btn-light btn-xl" style="position: relative;  bottom: 6%;" href="#contact">Contact Us!</a>
                         <div class="image-wrapper">
-                            <img src="SCMenu.png" alt="Menu">
+                            <img src="SCMenu.png" class="menu-card-img" alt="Menu">
                         </div>   
 
 
