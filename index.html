@@ -11132,14 +11132,22 @@ div.col-lg-6 {
     margin-top: 10px;
 }
 
-.img {
+.image-wrapper {
     position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.img {
-    max-width: 100%;
-    height: auto;
+@media (max-width: 600px) {
+    .image-wrapper img {
+    position: static;
+    width: 100%;
     display: block;
+    margin: 0 auto;
+ } 
+}    
+    
 
         </style>
         <!-- Favicon-->
@@ -11199,7 +11207,9 @@ div.col-lg-6 {
                         <hr class="divider divider-light" style="position: relative; bottom: 5%;"/>
                         <p class="text-black-75 mb-4" style="position: relative; bottom: 5%;">Delivery and pickup available. Contact us for more information.</p>
                         <a class="btn btn-light btn-xl" style="position: relative;  bottom: 6%;" href="#contact">Contact Us!</a>
-                        <img src="SCMenu.png" alt="Left Image">
+                        <div class="image-wrapper">
+                            <img src="SCMenu.png" alt="Menu">
+                        </div>   
 
 
 
