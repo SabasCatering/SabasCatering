@@ -11134,7 +11134,8 @@ div.col-lg-6 {
 
 .image-wrapper {
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -11143,16 +11144,20 @@ div.col-lg-6 {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
-    padding: 0 10px;
+    box-sizing: border-box;
     
 }    
 
 @media (min-width: 767px) {
     .menu-card-img {
-        max-width: 800px;
+        max-width: 700px;
  } 
 
+@media (min-width: 1024px) {
+    .menu-card-img {
+        max-width: 900px;
+    }
+}
 
         </style>
         <!-- Favicon-->
