@@ -11135,17 +11135,27 @@ div.col-lg-6 {
 .image-wrapper {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
+image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 
 @media (max-width: 600px) {
-    .image-wrapper img {
-    position: static;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
+    .image-wrapper {
+        padding: 10px;
  } 
+
+    .image-wrapper img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+ }
 }    
     
 
