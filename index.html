@@ -11133,25 +11133,31 @@ div.col-lg-6 {
 }
 
 .image-wrapper {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
+    overflow-x: auto;
     padding: 20px;
-    box-sizing: border-box;
+   
 }
 .menu-card-img {
-    width: 100%;
-    max-width: 100%;
+    width: auto;
+    max-width: none;
     height: auto;
-    display: block;
-    box-sizing: border-box;
     
 }    
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
     .menu-card-img {
-        max-width: 5000px;
+        width: 100%;
+        max-width: 100%;
  } 
+
+@media (min-width: 768px) {
+    .menu-card-img {
+        width: 1000px;
+    }
+}
 
 @media (min-width: 1024px) {
     .menu-card-img {
